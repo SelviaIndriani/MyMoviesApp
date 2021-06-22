@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">My Movies</string>
+    <string name="title_home">Home Movies</string>
+    <string name="home">Home</string>
+    <string name="movies">Movies</string>
+    <string name="tv_shows">TV Shows</string>
+    <string name="favorite_movies">Favorite Movies</string>
+    <string name="favorite">Favorite</string>
+    <string name="movie_playing">Movie Playing</string>
+    <string name="title">Title</string>
+    <string name="genre">Genre</string>
+    <string name="runtime">Runtime:</string>
+    <string name="release_date">Release:</string>
+    <string name="status">Status:</string>
+    <string name="share">Share</string>
+    <string name="popular">Popular</string>
+    <string name="top">Top Rated</string>
+    <string name="sub_movie_share">let\'s watch the %s movie in the Movie Catalogue apps</string>
+    <string name="title_share">Share %s movies</string>
+    <string name="notification">Notification</string>
+    <string name="off">Off</string>
+    <string name="on">On</string>
+    <string name="setting">Setting</string>
+    <string name="no_internet">No Internet Connection</string>
+</resources>

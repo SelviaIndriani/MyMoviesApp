@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/no_connection"
+        layout="@layout/content_no_internet"
+        android:visibility="gone"
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <TextView
+        android:id="@+id/txt_popular"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_v1"
+        android:layout_marginTop="@dimen/margin_v1"
+        android:gravity="start"
+        android:text="@string/popular"
+        android:textSize="17sp"
+        android:textStyle="bold" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_poster_movie"
+        android:layout_width="match_parent"
+        android:layout_height="225dp"
+        android:paddingStart="@dimen/margin_v1"
+        android:paddingTop="@dimen/margin_v2"
+        android:paddingEnd="@dimen/margin_v1"
+        android:paddingBottom="@dimen/margin_v2"
+        tools:listitem="@layout/items_movies_playing" />
+
+    <com.facebook.shimmer.ShimmerFrameLayout
+        android:id="@+id/progress_bar"
+        android:layout_width="match_parent"
+        android:layout_height="225dp"
+        android:paddingStart="@dimen/margin_v1"
+        android:paddingTop="@dimen/margin_v2"
+        android:paddingEnd="@dimen/margin_v1"
+        android:paddingBottom="@dimen/margin_v2"
+        app:shimmer_auto_start="true">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <include layout="@layout/items_movies_placeholder" />
+
+                <include layout="@layout/items_movies_placeholder" />
+
+                <include layout="@layout/items_movies_placeholder" />
+
+                <include layout="@layout/items_movies_placeholder" />
+
+                <include layout="@layout/items_movies_placeholder" />
+            </LinearLayout>
+
+        </ScrollView>
+
+    </com.facebook.shimmer.ShimmerFrameLayout>
+
+    <TextView
+        android:id="@+id/txt_all"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_v1"
+        android:layout_marginTop="@dimen/margin_v4"
+        android:gravity="start"
+        android:text="@string/top"
+        android:textSize="17sp"
+        android:textStyle="bold" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_list_movie"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="50dp"
+        android:paddingStart="@dimen/margin_v1"
+        android:paddingTop="@dimen/margin_v2"
+        android:paddingEnd="@dimen/margin_v1"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        tools:listitem="@layout/items_view_movies" />
+
+    <com.facebook.shimmer.ShimmerFrameLayout
+        android:id="@+id/progress_bar2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="50dp"
+        android:paddingStart="@dimen/margin_v1"
+        android:paddingTop="@dimen/margin_v2"
+        android:paddingEnd="@dimen/margin_v1"
+        app:shimmer_auto_start="true">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <include layout="@layout/items_view_placeholder" />
+
+                <include layout="@layout/items_view_placeholder" />
+
+                <include layout="@layout/items_view_placeholder" />
+
+                <include layout="@layout/items_view_placeholder" />
+
+                <include layout="@layout/items_view_placeholder" />
+            </LinearLayout>
+
+        </ScrollView>
+
+    </com.facebook.shimmer.ShimmerFrameLayout>
+
+</LinearLayout>

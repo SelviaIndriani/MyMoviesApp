@@ -1,0 +1,7 @@
+<resources>
+    <string name="movies">Movies</string>
+    <string name="tv_shows">Tv Shows</string>
+    <string name="empty_text">Favorite Movies data is still empty</string>
+    <string name="title_favorite">Favorite</string>
+
+</resources>
